@@ -40,13 +40,19 @@ function App() {
   const nameChanged = (e, row) => {
     const { num } = row
     // 参照渡しでは再描画されないため、値渡しで別配列を作成する。
-    const modifiedRows = rows.slice(0, rows.length)
-    modifiedRows[num - 1].name = e.target.value
+    // const modifiedRows = rows.slice(0, rows.length)
+    // modifiedRows[num - 1].name = e.target.value
+
+    // 再現用 上の記載だと画面が再描画されるが、下の記載だと画面が再描画されない（MAPがでてこない）
+    rows[num - 1].name = e.target.value
+    
     // mapURLを作成
     const endpoint = 'https://www.google.com/maps/search/?api=1&query='
     const encodedQuery = encodeURI(e.target.value)
-    modifiedRows[num -1].map = endpoint+encodedQuery
-    setRows(modifiedRows)
+    // modifiedRows[num -1].map = endpoint+encodedQuery
+    rows[num -1].map = endpoint+encodedQuery
+
+    setRows(rows)
   }
 
   const prefectureChanged = (e, row) => {
