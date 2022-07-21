@@ -5,7 +5,7 @@ import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth'
 import firebase from 'firebase/compat/app'
 import { useNavigate } from 'react-router-dom'
 
-const Top = () => {
+function Top() {
   const uiConfig = {
     signInOptions: [firebase.auth.GoogleAuthProvider.PROVIDER_ID],
     signInSuccessUrl: '/chat-room',
