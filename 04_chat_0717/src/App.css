@@ -1,0 +1,81 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.App {
+  height: 100vh;
+  width: 800px;
+  background-color: skyblue;
+  overflow: scroll;
+}
+.top-bar {
+  position: sticky;
+  top: 34.304px;
+  z-index: 2;
+}
+
+.chat-area {
+  min-height: 1200px;
+  z-index: 1;
+}
+.type-area {
+  position: sticky;
+  bottom: 0;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: center;
+  align-items: stretch;
+  z-index: 2;
+}
+
+.msg-input {
+  width: 88%;
+}
+
+
+.opponent {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.opponent-name {
+  text-align: left;
+  margin: 0 0 0 2px;
+  font-size: 14px;
+}
+.opponent-time {
+  font-size: 12px;
+  margin: 0;
+  text-align: right;
+}
+.opponent-msg {
+  margin: 5px 5px 5px 10px;
+  color: black;
+}
+
+.self {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.self-time {
+  font-size: 12px;
+  margin: 0;
+  text-align: right;
+}
+.self-msg {
+  margin: 5px 45px 5px 10px;
+  color: black;
+}
+.msg-top {
+  display: flex;
+}
