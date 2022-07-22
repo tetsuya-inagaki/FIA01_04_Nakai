@@ -60,7 +60,7 @@ function ChatRoom() {
   return (
     <div className="App">
       <div className="top-bar">
-        <h1>ChatRoom</h1>
+        <h1 className="title">ChatRoom</h1>
       </div>
       <div className="chat-area">
         {msgs.map(item => (

@@ -8,7 +8,8 @@ import ChatRoom from './ChatRoom'
 
 ReactDOM.createRoot(
   document.getElementById('root')
-).render(
+)
+.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Top />} />

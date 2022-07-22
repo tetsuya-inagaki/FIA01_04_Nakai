@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import { firebaseApp, db } from './firebase'
-import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth'
+import { firebaseApp, db, auth } from './firebase'
+import { StyledFirebaseAuth } from 'react-firebaseui'
 import firebase from 'firebase/compat/app'
 import { useNavigate } from 'react-router-dom'
 
@@ -56,7 +56,7 @@ function Top() {
     <div>
       <h1>ログイン</h1>
       <div>
-        <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebaseApp.auth()} />
+        <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={auth} />
       </div>
     </div>
   )
