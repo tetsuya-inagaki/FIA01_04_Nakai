@@ -1,0 +1,34 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.reactMarkDown {
+    height: 40vh;
+    width: 60vw;
+    overflow: scroll;
+    text-align: left;
+}
+
+.reactMarkDown > h1 {
+  font-size: 30px;
+}
+
+.name {
+    text-align: left;
+
+}
+.time {
+    text-align: left;
+
+}
+.url {
+    text-align: left;
+
+}
+.readme {
+    text-align: left;
+
+}
