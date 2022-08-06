@@ -1,0 +1,141 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.App {
+  height: 99vh;
+  width: 800px;
+  background-color: skyblue;
+  overflow: scroll;
+}
+.top-bar {
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  top: 0px;
+  z-index: 2;
+  /* background-color: skyblue; */
+  background-color: #2C3134;
+}
+.title {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  width: 800px;
+  padding-top: 35px;
+  margin-left: 55px;
+}
+
+.MuiSvgIcon-root {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.chat-area {
+  min-height: 1200px;
+  z-index: 1;
+}
+.type-area {
+  position: sticky;
+  bottom: 0;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: center;
+  align-items: stretch;
+  z-index: 2;
+}
+
+.msg-input {
+  width: 88%;
+}
+
+
+.opponent {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.opponent-name {
+  text-align: left;
+  margin: 0 0 0 2px;
+  font-size: 14px;
+}
+.opponent-time {
+  font-size: 12px;
+  margin: 0;
+  text-align: right;
+}
+.opponent-msg {
+  margin: 5px 5px 5px 10px;
+  color: black;
+}
+
+.self {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.self-time {
+  font-size: 12px;
+  margin: 0;
+  text-align: right;
+}
+.self-msg {
+  margin: 5px 45px 5px 10px;
+  color: black;
+}
+.msg-top {
+  display: flex;
+}
+
+
+.modal-bg {
+  height: 100vh;
+  width: 800px;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  background-color: rgba(38, 12, 12, 0.42);
+  z-index: 3;
+}
+
+.call-modal {
+  position: relative;
+  top: 120px;
+  left: 2.5%;
+  height: 80vh;
+  width: 95%;
+  background-color: white;
+  z-index: 4;
+}
+
+.modal-main {
+  height: 93%;
+  background-color: gray;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+  gap: 0px;
+  align-content: center;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-bottom {
+  position: absolute;
+  bottom: 10px;
+  left: 360px;
+  margin-top: auto;
+}
